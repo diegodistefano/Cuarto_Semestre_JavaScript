@@ -22,7 +22,7 @@ productos.forEach((product) =>{
         if (repeat) {
           cart.map((prod) => {
             if (prod.id === product.id) {
-              product.quanty++;
+              prod.quanty++;
             }
           });
         } else {
@@ -34,5 +34,5 @@ productos.forEach((product) =>{
                 img: product.img,
           });  
         }
-    })
+    });
 });
